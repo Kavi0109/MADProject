@@ -5,8 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="15sp"
+    android:layout_marginBottom="20dp"
     android:orientation="vertical"
     tools:context=".EnterProfile">
+
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="155dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/btn"
+        android:paddingRight="10dp"
+        android:text="Take A photo"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/btn"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:layout_width="match_parent"
@@ -18,18 +33,20 @@
         android:id="@+id/edit_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Bio"
+        android:text="Description"
         />
 
     <EditText
         android:id="@+id/edit_bio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <TextView
@@ -42,6 +59,7 @@
         android:id="@+id/edit_age"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <TextView
@@ -54,6 +72,7 @@
         android:id="@+id/edit_school"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <Button
@@ -69,7 +88,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/teal_700"
-        android:text="Open"
+        android:text="View Records"
         app:backgroundTint="@color/teal_700"
         tools:ignore="TextContrastCheck" />
 

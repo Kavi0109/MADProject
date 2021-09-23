@@ -4,13 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/mackp/AndroidStudioProjects/CartAndProfile/app/src/main/res/drawable/bg_order.xml" value="0.2169230769230769" />
-        <entry key="..\:/Users/mackp/AndroidStudioProjects/CartAndProfile/app/src/main/res/layout/activity_cart.xml" value="0.17192982456140352" />
+        <entry key="..\:/Users/mackp/AndroidStudioProjects/CartAndProfile/app/src/main/res/layout/activity_cart.xml" value="0.25" />
         <entry key="..\:/Users/mackp/AndroidStudioProjects/CartAndProfile/app/src/main/res/layout/activity_create_profile.xml" value="0.2318840579710145" />
-        <entry key="..\:/Users/mackp/AndroidStudioProjects/CartAndProfile/app/src/main/res/layout/activity_enter_profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mackp/AndroidStudioProjects/CartAndProfile/app/src/main/res/layout/activity_enter_profile.xml" value="0.25" />
         <entry key="..\:/Users/mackp/AndroidStudioProjects/CartAndProfile/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/mackp/AndroidStudioProjects/CartAndProfile/app/src/main/res/layout/activity_rvactivity.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/mackp/AndroidStudioProjects/CartAndProfile/app/src/main/res/layout/activity_show_cart.xml" value="0.22" />
         <entry key="..\:/Users/mackp/AndroidStudioProjects/CartAndProfile/app/src/main/res/layout/activity_showprofile.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mackp/AndroidStudioProjects/CartAndProfile/app/src/main/res/layout/activity_upload_image.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/mackp/AndroidStudioProjects/CartAndProfile/app/src/main/res/layout/layout_item.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/mackp/AndroidStudioProjects/CartAndProfile/app/src/main/res/layout/layout_order.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/mackp/AndroidStudioProjects/CartAndProfile/app/src/main/res/menu/options_menu.xml" value="0.20416666666666666" />

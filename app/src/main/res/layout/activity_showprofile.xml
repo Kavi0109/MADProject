@@ -165,7 +165,7 @@
         android:layout_marginRight="7dp"
         android:backgroundTint="@color/border"
         android:contentDescription="@string/imageEdit"
-        android:src="@drawable/ic_baseline_edit_24"
+        app:src="@drawable/ic_baseline_edit_24"
         tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck"
         tools:targetApi="lollipop" />
 

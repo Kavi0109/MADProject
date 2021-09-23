@@ -4,14 +4,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.util.HashMap;
 
-public class EnterProfile extends AppCompatActivity {
+public class EnterProfile<imageView> extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,8 +25,16 @@ public class EnterProfile extends AppCompatActivity {
         final EditText edit_bio = findViewById(R.id.edit_bio);
         final EditText edit_school = findViewById(R.id.edit_school);
 
+
         Button btn = findViewById(R.id.btn_submit);
         Button btn_open = findViewById(R.id.btn_open);
+        Button btn_image = findViewById(R.id.button4);
+
+        btn_image.setOnClickListener(v -> {
+            Intent intent = new Intent(EnterProfile.this,UploadImage.class);
+            startActivity(intent);
+        });
+
         btn_open.setOnClickListener(v->{
             Intent intent = new Intent(EnterProfile.this,RVActivity.class);
             startActivity(intent);
@@ -65,6 +76,8 @@ public class EnterProfile extends AppCompatActivity {
                 HashMap<String,Object> hashMap = new HashMap<>();
                 hashMap.put("name",edit_name.getText().toString());
                 hashMap.put("age",edit_age.getText().toString());
+                hashMap.put("bio",edit_bio.getText().toString());
+                hashMap.put("school",edit_school.getText().toString());
                 dao.update(user_edit.getKey(),hashMap).addOnSuccessListener(suc ->
                 {
                     Toast.makeText(this,"Record Is Updated!",Toast.LENGTH_SHORT).show();
@@ -76,6 +89,8 @@ public class EnterProfile extends AppCompatActivity {
                 });
 
             }
+
+
 
 
 
@@ -105,4 +120,6 @@ public class EnterProfile extends AppCompatActivity {
 
 
     }
+
+
 }

@@ -8,6 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.cartandprofile"
+        vectorDrawables.useSupportLibrary  true
         multiDexEnabled true
         minSdk 16
         targetSdk 30

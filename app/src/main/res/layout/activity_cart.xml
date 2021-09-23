@@ -3,10 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:backgroundTint="@color/btn"
     android:padding="10dp"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Cart">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:id="@+id/spiderimg"
+            android:layout_width="164dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/spider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
 
     <TextView
         android:id="@+id/spiderMan_txt"
@@ -14,17 +33,23 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="5dp"
-        android:text="@string/spiderman"
+        android:text="SpiderMan Toy"
         android:textAlignment="center"
         android:textSize="18dp"
         android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/spiderimg"
-        android:layout_width="369dp"
-        android:layout_height="127dp"
-        android:contentDescription="TODO"
-        app:srcCompat="@drawable/spider" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:text="USD20"
+                android:textColor="@color/border"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btton1"
@@ -34,8 +59,30 @@
         android:layout_marginBottom="10dp"
         android:background="@color/border"
         android:text="@string/add_to_cart1"
+        android:layout_gravity="center_horizontal"
         android:textColor="@color/white"
         tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:id="@+id/barbieimg"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/barbie" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
     <TextView
         android:id="@+id/barbie_txt"
@@ -43,36 +90,164 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="5dp"
-        android:text="@string/barbieset"
+        android:text="Barbie Collection"
         android:textAlignment="center"
         android:textSize="18dp"
         android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/barbieimg"
-        android:layout_width="370dp"
-        android:layout_height="128dp"
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:text="USD200"
+                android:textColor="@color/border"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textStyle="bold" />
 
-        app:srcCompat="@drawable/barbie" />
 
-    <androidx.appcompat.widget.AppCompatButton
+            <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btton2"
         android:layout_width="131dp"
         android:layout_height="29dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:background="@color/border"
+                android:layout_gravity="center_horizontal"
         android:text="@string/add_to_cart2"
         android:textColor="@color/white"
         tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+
+
+    </LinearLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/cookingset" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:text="Cooking Tool Kit"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:text="USD150"
+                android:textColor="@color/border"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="131dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/border"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/add_to_cart2"
+                android:textColor="@color/white"
+                tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/slider2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:text="Toy Car"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:text="USD50"
+                android:textColor="@color/border"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="131dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/border"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/add_to_cart2"
+                android:textColor="@color/white"
+                tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_gravity="right">
+
 
     <TextView
         android:id="@+id/add_txt"
         android:layout_width="149dp"
         android:layout_height="30dp"
         android:layout_gravity="right"
-        android:text="@string/noOfAddtocart"
-        android:textSize="15dp"
+        android:text="Items in cart"
+        android:textSize="20dp"
         android:textStyle="bold" />
 
     <TextView
@@ -86,5 +261,6 @@
         android:textColor="@color/black"
         android:textSize="20sp" />
 
-
 </LinearLayout>
+    </LinearLayout>
+
