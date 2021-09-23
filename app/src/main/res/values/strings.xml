@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">CartAndProfile</string>
+    <string name="show_profile">Show Profile</string>
+    <string name="name_et_cp">Name</string>
+    <string name="age_et_cp">Age</string>
+    <string name="bio_et_cp">Bio</string>
+    <string name="gender_et_cp">Gender</string>
+    <string name="save_profile">Save Profile</string>
+    <string name="imageEdit">imageEdit</string>
+    <string name="Name_txt_edit">Name</string>
+    <string name="name_tv_sp">Name</string>
+    <string name="ageEnter">Age</string>
+    <string name="age_tv_sp">Age</string>
+    <string name="Bio_txt_edit">Bio</string>
+    <string name="bio_tv_sp">Bio</string>
+    <string name="Gender_txt_edit">Gender</string>
+    <string name="gender_tv_sp">Gender</string>
+    <string name="imageEnter">imageEnter</string>
+    <string name="imageEditPic">imageEditPic</string>
+    <string name="add_to_cart1">Add To cart</string>
+    <string name="spiderman">spiderman</string>
+    <string name="barbieset">barbieset</string>
+    <string name="add_to_cart2">add to cart</string>
+    <string name="cookingTools">cooking tools</string>
+    <string name="add_to_cart3">add to cart</string>
+    <string name="noOfAddtocart">Total Items</string>
+    <string name="_0">0</string>
+    <string name="product_name">Product Name</string>
+    <string name="price">price</string>
+    <string name="Orders">Orders</string>
+    <string name="Loginnsec">Login And Security</string>
+    <string name="subs">My Subscriptions</string>
+    <string name="history">Manage History</string>
+    <string name="contentsp">Personalized Content</string>
+</resources>

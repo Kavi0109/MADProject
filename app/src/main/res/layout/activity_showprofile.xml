@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Showprofile">
+
+    <ImageView
+        android:id="@+id/imageEdit"
+        android:layout_width="200sp"
+        android:layout_height="150sp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_baseline_image_24"
+        android:contentDescription="@string/imageEditPic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/Name_txt_edit"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="30sp"
+            android:padding="10dp"
+            android:text="@string/Name_txt_edit"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:ignore="RtlCompat"
+            android:layout_marginStart="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name_tv_sp"
+            android:textSize="20sp"
+            android:layout_marginLeft="30sp"
+            android:padding="10dp"
+            android:layout_gravity="start"
+            android:textAlignment="viewStart"
+            android:id="@+id/name_tv_sp"
+            tools:ignore="RtlCompat"
+            android:layout_marginStart="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/Age_txt_edit"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="30sp"
+            android:padding="10dp"
+            android:text="@string/ageEnter"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:ignore="RtlCompat"
+            android:layout_marginStart="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/age_tv_sp"
+            android:textSize="20sp"
+            android:layout_marginLeft="30sp"
+            android:padding="10dp"
+            android:layout_gravity="start"
+            android:textAlignment="viewStart"
+            android:id="@+id/age_tv_sp"
+            tools:ignore="RtlCompat"
+            android:layout_marginStart="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/Bio_txt_edit"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="30sp"
+            android:padding="10dp"
+            android:text="@string/Bio_txt_edit"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:ignore="RtlCompat"
+            android:layout_marginStart="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bio_tv_sp"
+            android:textSize="20sp"
+            android:layout_marginLeft="30sp"
+            android:padding="10dp"
+            android:layout_gravity="start"
+            android:textAlignment="viewStart"
+            android:id="@+id/bio_tv_sp"
+            tools:ignore="RtlCompat"
+            android:layout_marginStart="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/Gender_txt_edit"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="30sp"
+            android:layout_marginLeft="30sp"
+            android:padding="10dp"
+            android:text="@string/Gender_txt_edit"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gender_tv_sp"
+            android:textSize="20sp"
+            android:layout_marginLeft="30sp"
+            android:padding="10dp"
+            android:layout_gravity="start"
+            android:textAlignment="viewStart"
+            android:id="@+id/gender_tv_sp"
+            tools:ignore="RtlCompat"
+            android:layout_marginStart="30sp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatinfbtn_sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:backgroundTint="@color/border"
+        android:contentDescription="@string/imageEdit"
+        android:src="@drawable/ic_baseline_edit_24"
+        tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck"
+        tools:targetApi="lollipop" />
+
+
+</LinearLayout>

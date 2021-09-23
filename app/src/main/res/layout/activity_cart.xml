@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Cart">
+
+    <TextView
+        android:id="@+id/spiderMan_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:text="@string/spiderman"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/spiderimg"
+        android:layout_width="369dp"
+        android:layout_height="127dp"
+        android:contentDescription="TODO"
+        app:srcCompat="@drawable/spider" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btton1"
+        android:layout_width="127dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/border"
+        android:text="@string/add_to_cart1"
+        android:textColor="@color/white"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/barbie_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:text="@string/barbieset"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/barbieimg"
+        android:layout_width="370dp"
+        android:layout_height="128dp"
+
+        app:srcCompat="@drawable/barbie" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btton2"
+        android:layout_width="131dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/border"
+        android:text="@string/add_to_cart2"
+        android:textColor="@color/white"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/add_txt"
+        android:layout_width="149dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:text="@string/noOfAddtocart"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/show_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:paddingLeft="10dp"
+        android:paddingRight="0dp"
+        android:text="@string/_0"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

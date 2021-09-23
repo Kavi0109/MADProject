@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".CreateProfile">
+
+    <ImageView
+        android:id="@+id/imageView_cp"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:background="@drawable/ic_baseline_image_24"
+        android:clickable="true"
+        android:contentDescription="@string/imageEnter"
+        android:focusable="true"
+        android:onClick="ChooseImage"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/name_et_cp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/border"
+        android:hint="@string/name_et_cp"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColor="@color/black"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck"
+        tools:targetApi="lollipop" />
+
+    <EditText
+        android:id="@+id/age_et_cp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/border"
+        android:hint="@string/age_et_cp"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColor="@color/black"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck"
+        tools:targetApi="lollipop" />
+
+    <EditText
+        android:id="@+id/bio_et_cp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/border"
+        android:hint="@string/bio_et_cp"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck"
+        tools:targetApi="lollipop" />
+
+    <EditText
+        android:id="@+id/gender_et_cp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/border"
+        android:hint="@string/gender_et_cp"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck"
+        tools:targetApi="lollipop" />
+
+    <Button
+        android:id="@+id/save_profile_btn_cp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:text="@string/save_profile"
+        app:backgroundTint="@color/border"
+        tools:ignore="TextContrastCheck" />
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/border"
+        android:visibility="invisible"
+        android:id="@+id/progressbar_cp"
+        tools:targetApi="lollipop" />
+
+
+</LinearLayout>

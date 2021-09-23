@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "56996410234",
+    "project_id": "cartandprofile",
+    "storage_bucket": "cartandprofile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56996410234:android:558415eb626fa56bd55cc3",
+        "android_client_info": {
+          "package_name": "com.example.cartandprofile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "56996410234-mib79aagpot6l3bokut0mgkf6kcee9ge.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwNTXh1Bwpo4czNENhwuuFaF7BIAtIH8U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "56996410234-mib79aagpot6l3bokut0mgkf6kcee9ge.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
