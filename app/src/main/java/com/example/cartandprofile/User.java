@@ -1,6 +1,11 @@
 package com.example.cartandprofile;
 
+import com.google.firebase.database.Exclude;
+
 public class User {
+
+    @Exclude
+    private String key;
     private String name;
     private String age;
     private String bio;
@@ -19,6 +24,14 @@ public class User {
 
     public String getName() {
         return name;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
     }
 
     public void setName(String name) {

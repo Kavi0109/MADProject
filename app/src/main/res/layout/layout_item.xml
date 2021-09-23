@@ -5,6 +5,16 @@
     android:layout_height="wrap_content"
     android:layout_margin="2dp">
 
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:text="&#8942;"
+        android:textSize="20sp"
+        android:id="@+id/txt_option"
+        android:layout_gravity="right"
+        />
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

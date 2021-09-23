@@ -65,8 +65,10 @@ public class RVActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
 
                 ArrayList<User> users = new ArrayList<>();
-                for(DataSnapshot data : snapshot.getChildren()){
+                for(DataSnapshot data : snapshot.getChildren())
+                {
                     User user = data.getValue(User.class);
+                    user.setKey(data.getKey());
                     users.add(user);
                     key=data.getKey();
                 }
