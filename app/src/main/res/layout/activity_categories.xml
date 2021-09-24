@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        tools:context=".Categories">
+
+        <TextView
+            android:id="@+id/CategoriesPage"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="40dp"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/aclonica"
+            android:text="@string/Categories"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            app:drawableLeftCompat="@drawable/ic_baseline_format_list_bulleted_24"
+            app:drawableTint="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/ToysVehiclesBtn"
+            android:layout_width="342dp"
+            android:layout_height="100dp"
+            android:text="@string/ToysVehicles"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="#FF5D55"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CategoriesPage"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <Button
+            android:id="@+id/DollsBtn"
+            android:layout_width="342dp"
+            android:layout_height="100dp"
+            android:text="@string/Dolls"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="#FF5D55"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ToysVehiclesBtn" />
+
+        <Button
+            android:id="@+id/PuzzleBtn"
+            android:layout_width="342dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/PuzzleBtn"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="#FF5D55"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/DollsBtn" />
+
+        <Button
+            android:id="@+id/EducationalBtn"
+            android:layout_width="342dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/EducationalBtn"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="#FF5D55"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PuzzleBtn" />
+
+        <Button
+            android:id="@+id/SoftToysBtn"
+            android:layout_width="342dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/SoftToysBtn"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="#FF5D55"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EducationalBtn" />
+
+        <Button
+            android:id="@+id/WoodenToysBtn"
+            android:layout_width="342dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/WoodenToysBtn"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="#FF5D55"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SoftToysBtn" />
+
+        <Button
+            android:id="@+id/ElectronicToysBtn"
+            android:layout_width="342dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/ElectronicToysBtn"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="#FF5D55"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/WoodenToysBtn" />
+
+        <Button
+            android:id="@+id/BabyToysBtn"
+            android:layout_width="342dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/BabyToysBtn"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="#FF5D55"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ElectronicToysBtn" />
+
+        <Button
+            android:id="@+id/DisneyToysBtn"
+            android:layout_width="342dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            android:text="@string/DisneyToysBtn"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="#FF5D55"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/BabyToysBtn" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>
+
+

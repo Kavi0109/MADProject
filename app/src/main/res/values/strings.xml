@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">ToyzProject</string>
+    <string name="SignUptitle">Sign Up</string>
+    <string name="CreateNewAcc">Create New Account</string>
+    <string name="business_name">Business Name</string>
+    <string name="email">Email</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_passwrod">Confirm Passwrod</string>
+    <string name="register">Register</string>
+    <string name="already_registered_login_here">Already Registered ? Login Here</string>
+    <string name="logintitle">Login</string>
+    <string name="createacc" />
+    <string name="new_here_create_account">New Here ? Create Account</string>
+    <string name="login">login</string>
+    <string name="home">Home</string>
+    <string name="NewArrivals">New Arrivals</string>
+    <string name="Category">Category</string>
+    <string name="Newsletter">Newsletter</string>
+    <string name="Statistics">Statistics</string>
+    <string name="Categories">Categories</string>
+    <string name="ToysVehicles">Toys Vehicles</string>
+    <string name="Dolls">Dolls</string>
+    <string name="PuzzleBtn">Puzzle</string>
+    <string name="EducationalBtn">Educational Toys</string>
+    <string name="SoftToysBtn">Soft Toys</string>
+    <string name="WoodenToysBtn">Wooden Toys</string>
+    <string name="ElectronicToysBtn">Electronic Toys </string>
+    <string name="BabyToysBtn">Baby Toys</string>
+    <string name="DisneyToysBtn">Disney Toys</string>
+
+    <string name="ToyVehicleimage">ToyVehicleimage</string>
+
+    <string name="AddItem">Add Item</string>
+    <string name="Toyname">Toy Name</string>
+    <string name="ToyDescription">Description</string>
+    <string name="ToyColor">Toy Color</string>
+    <string name="ToyBrand">Brand</string>
+    <string name="ToyModel">Model</string>
+    <string name="ToyPrice">Price</string>
+    <string name="date">Date</string>
+    <string name="Submitbtn">Submit</string>
+    <string name="ToyID">Toy ID</string>
+    <string name="ToyDate">Manufacture Date</string>
+    <string name="ToyVehicletitle">Toy Vehicle</string>
+    <string name="AddNewItems">Add New Items</string>
+    <string name="ItemsBtn">Items</string>
+    <string name="BackBtn">Back</string>
+    <string name="NewsletterToolBar">Newsletter</string>
+    <string name="newsletterimage">newsletterimage</string>
+    <string name="EmailBtn">Email</string>
+    <string name="SMSBtn">SMS</string>
+    <string name="send">Send</string>
+    <string name="message">message</string>
+    <string name="messageEmail">Message</string>
+    <string name="EmailSubject">Subject</string>
+    <string name="subject">Subject</string>
+    <string name="EmailTo">To</string>
+    <string name="to">To</string>
+    <string name="EmailBack">Back</string>
+    <string name="enter_message">Enter message</string>
+    <string name="enter_phone_number">Enter phone number</string>
+    <string name="send_sms">Send SMS</string>
+    <string name="news1">"Rocking horse, easy puzzles, make-believe toys (plastic houses and people, toy cars and trucks, play food and dishes), crayons and paper  "</string>
+    <string name="lion">lion</string>
+    <string name="news2">"Push and pull toys, large blocks, board books, toys that require hand manipulation to \"make something happen\"  "</string>
+    <string name="softtoy">softtoy</string>
+    <string name="string_softtoy">softtoy</string>
+
+    <string name="toyid">ToyID</string>
+    <string name="toy_colour">Toy Colour</string>
+    <string name="toy_name">Toy Name</string>
+    <string name="HomePara1">Toys and play items appropriate for preschool-age children include: large and small transportation toys; cuddly toy animals; simple musical instruments; farm and zoo animal sets;</string>
+    <string name="HomePara2">Toy manufacturers consider the size of toy parts—which are likely to be put into the mouth by an older infant or toddler—in designing toys.</string>
+    <string name="toy19">toy19</string>
+    <string name="toy17">toy17</string>
+    <string name="toy6">toy6</string>
+    <string name="toy16">toy16</string>
+    <string name="vehiclePagePara">Tricycle, toy basketball hoop and balls, toy trains with tracks, dolls with bottles and other equipment, toy kitchen equipment, coloring books and crayons</string>
+    <string name="toy20">toy20</string>
+
+
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "540318832929",
+    "project_id": "toyzproject-cc4ef",
+    "storage_bucket": "toyzproject-cc4ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540318832929:android:8847051d51a2ecb6378660",
+        "android_client_info": {
+          "package_name": "com.example.toyzproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "540318832929-dvfkgnpn5j3k85ik4upmtc2jqhlb1no6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuZM8Jh1yAE4epfs19cta_inNrdlVloF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "540318832929-dvfkgnpn5j3k85ik4upmtc2jqhlb1no6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

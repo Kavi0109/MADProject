@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Home">
+
+
+        <ImageView
+            android:id="@+id/ToyVehicleimage"
+            android:layout_width="397dp"
+            android:layout_height="212dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/ToyVehicleimage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/toy16" />
+
+
+        <Button
+            android:id="@+id/NewArrivalsBtn"
+            android:layout_width="256dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginLeft="68dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="69dp"
+            android:layout_marginRight="69dp"
+            android:background="@drawable/homebtn_bg"
+            android:text="@string/NewArrivals"
+            android:textSize="20sp"
+            app:backgroundTint="#FF5D55"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/HomePara1" />
+
+        <Button
+            android:id="@+id/CategoryBtn"
+            android:layout_width="256dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/homebtn_bg"
+            android:text="@string/Category"
+            android:textSize="20sp"
+            app:backgroundTint="#FF5D55"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/NewArrivalsBtn" />
+
+        <Button
+            android:id="@+id/NewsletterBtn"
+            android:layout_width="256dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/homebtn_bg"
+            android:text="@string/Newsletter"
+            android:textSize="20sp"
+            app:backgroundTint="#FF5D55"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CategoryBtn" />
+
+        <Button
+            android:id="@+id/StaticsBtn"
+            android:layout_width="256dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/homebtn_bg"
+            android:text="@string/Statistics"
+            android:textSize="20sp"
+            app:backgroundTint="#FF5D55"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/NewsletterBtn" />
+
+        <TextView
+            android:id="@+id/HomePara1"
+            android:layout_width="396dp"
+            android:layout_height="128dp"
+            android:layout_marginTop="24dp"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/HomePara1"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.542"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ToyVehicleimage" />
+
+        <TextView
+            android:id="@+id/HomePara2"
+            android:layout_width="396dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="35dp"
+            android:paddingStart="30dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="10dp"
+            android:text="@string/HomePara2"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/StaticsBtn" />
+
+        <ImageView
+            android:id="@+id/ToyVehicleimage1"
+            android:layout_width="397dp"
+            android:layout_height="212dp"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="100dp"
+            android:contentDescription="@string/ToyVehicleimage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/HomePara2"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/teddy4" />
+
+        <ImageView
+            android:id="@+id/ToyVehicleimage2"
+            android:layout_width="178dp"
+            android:layout_height="114dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="90dp"
+            android:contentDescription="@string/ToyVehicleimage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ToyVehicleimage1"
+            app:srcCompat="@drawable/teddy3" />
+
+        <ImageView
+            android:id="@+id/toyVehicleimage2"
+            android:layout_width="156dp"
+            android:layout_height="116dp"
+            android:layout_marginTop="40dp"
+            android:contentDescription="@string/ToyVehicleimage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ToyVehicleimage2"
+            app:layout_constraintTop_toBottomOf="@+id/ToyVehicleimage1"
+            app:srcCompat="@drawable/toy2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+
