@@ -33,4 +33,8 @@
     <string name="history">Manage History</string>
     <string name="contentsp">Personalized Content</string>
     <string name="addImage">Take a photo</string>
+    <string name="invalid_name">Enter Correct Name</string>
+    <string name="invalid_mobile">Age limit exceeded or invalid</string>
+    <string name="invalid_bio">Enter More than 5 charchters</string>
+    <string name="invalid_school">Enter More than 10 characters</string>
 </resources>

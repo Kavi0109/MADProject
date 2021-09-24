@@ -11,9 +11,15 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.basgeekball.awesomevalidation.AwesomeValidation;
+import com.basgeekball.awesomevalidation.ValidationStyle;
+import com.basgeekball.awesomevalidation.utility.RegexTemplate;
+
 import java.util.HashMap;
 
-public class EnterProfile<imageView> extends AppCompatActivity {
+public class EnterProfile extends AppCompatActivity {
+
+    AwesomeValidation awesomeValidation;
 
 
     @Override
@@ -24,6 +30,16 @@ public class EnterProfile<imageView> extends AppCompatActivity {
         final EditText edit_age = findViewById(R.id.edit_age);
         final EditText edit_bio = findViewById(R.id.edit_bio);
         final EditText edit_school = findViewById(R.id.edit_school);
+
+        //Initializing the validations
+        awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
+
+        //Adding Validations
+        awesomeValidation.addValidation(this,R.id.edit_name, RegexTemplate.NOT_EMPTY,R.string.invalid_name);
+        awesomeValidation.addValidation(this,R.id.edit_age,"[0-1]{1}[0-8]{1}$",R.string.invalid_mobile);
+        awesomeValidation.addValidation(this,R.id.edit_bio,".{5,}",R.string.invalid_bio);
+        awesomeValidation.addValidation(this,R.id.edit_school,".{10,}",R.string.invalid_school);
+        Button btn_validate = findViewById(R.id.btn_validate);
 
 
         Button btn = findViewById(R.id.btn_submit);
@@ -55,6 +71,17 @@ public class EnterProfile<imageView> extends AppCompatActivity {
             btn_open.setVisibility(View.VISIBLE);
         }
 
+        btn_validate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(awesomeValidation.validate()){
+                    Toast.makeText(getApplicationContext(),"Form Validate Successfully..",Toast.LENGTH_SHORT).show();
+                }else{
+                    Toast.makeText(getApplicationContext(),"Validation Failed.",Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
         btn.setOnClickListener(v ->
         {
 
@@ -76,8 +103,6 @@ public class EnterProfile<imageView> extends AppCompatActivity {
                 HashMap<String,Object> hashMap = new HashMap<>();
                 hashMap.put("name",edit_name.getText().toString());
                 hashMap.put("age",edit_age.getText().toString());
-                hashMap.put("bio",edit_bio.getText().toString());
-                hashMap.put("school",edit_school.getText().toString());
                 dao.update(user_edit.getKey(),hashMap).addOnSuccessListener(suc ->
                 {
                     Toast.makeText(this,"Record Is Updated!",Toast.LENGTH_SHORT).show();

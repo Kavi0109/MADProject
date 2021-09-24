@@ -2,8 +2,12 @@ package com.example.cartandprofile;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -13,11 +17,8 @@ import android.widget.ImageView;
 
 public class UploadImage extends AppCompatActivity {
 
-    private ImageView imageView;
-    private Button button;
-    private static final int CAMERA_REQUEST = 1888;
-
-
+     ImageView imageView;
+     Button button;
 
 
     @Override
@@ -28,11 +29,21 @@ public class UploadImage extends AppCompatActivity {
         imageView = findViewById(R.id.imgv);
         button = findViewById(R.id.addImage);
 
+        if(ContextCompat.checkSelfPermission(UploadImage.this,
+                Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED){
+            ActivityCompat.requestPermissions(UploadImage.this,
+                    new String[]{
+                            Manifest.permission.CAMERA
+                    },
+                    100);
+
+        }
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent open_camera = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivityForResult(open_camera, CAMERA_REQUEST);
+                startActivityForResult(open_camera, 100);
             }
         });
     }
@@ -40,7 +51,7 @@ public class UploadImage extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode == CAMERA_REQUEST) {
+        if(requestCode == 100) {
             Bitmap photo = (Bitmap) data.getExtras().get("data");
             imageView.setImageBitmap(photo);
         }

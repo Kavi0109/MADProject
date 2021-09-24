@@ -53,5 +53,7 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation "androidx.cardview:cardview:1.0.0"
 
+    implementation 'com.basgeekball:awesome-validation:4.2'
+
 
 }
