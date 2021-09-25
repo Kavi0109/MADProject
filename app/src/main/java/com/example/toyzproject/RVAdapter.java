@@ -1,13 +1,18 @@
 package com.example.toyzproject;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.PopupMenu;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 public class RVAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
@@ -45,11 +50,47 @@ public class RVAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         vh.txt_toyname.setText(toys.getToyName());
         vh.txt_toyDescription.setText(toys.getToyDescription());
 
+        vh.txt_option.setOnClickListener(v->
+        {
+            PopupMenu popupMenu =new PopupMenu(context,vh.txt_option);
+            popupMenu.inflate(R.menu.option_menu);
+            popupMenu.setOnMenuItemClickListener(item->
+            {
+                switch(item.getItemId())
+                {
+                    case R.id.menu_edit:
+                        Intent intent =new Intent(context,ToysAddForm.class);
+                        intent.putExtra("EDIT", toys);
+                        context.startActivity(intent);
+                        break;
+
+                    case R.id.menu_remove:
+                        //Delete
+                        DAOToys dao = new DAOToys();
+                        dao.remove(toys.getKey()).addOnSuccessListener(suc->
+                        {
+                            Toast.makeText(context, "Record is Removed!", Toast.LENGTH_SHORT).show();
+                            notifyItemRemoved(position);
+
+                        }).addOnFailureListener(er->
+                        {
+                            Toast.makeText(context,""+er.getMessage(),Toast.LENGTH_SHORT).show();
+                        });
+
+                        break;
+                }
+
+                return false;
+            });
+            popupMenu.show();
+        });
+
     }
 
     @Override
     public int getItemCount()
     {
+
         return list.size();
     }
 }

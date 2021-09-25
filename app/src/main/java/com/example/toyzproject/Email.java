@@ -46,9 +46,5 @@ public class Email extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
-
-
     }
 }

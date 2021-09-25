@@ -7,30 +7,13 @@
     tools:context=".ToysVehical">
 
     <Button
-        android:id="@+id/ItemsBtn"
-        android:layout_width="175dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginRight="25dp"
-        android:text="@string/ItemsBtn"
-        app:backgroundTint="#FF5D55"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/addNewItemsBtn"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
-
-    <Button
         android:id="@+id/addNewItemsBtn"
-        android:layout_width="175dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="25dp"
+        android:layout_width="352dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="10dp"
         android:text="@string/AddNewItems"
         app:backgroundTint="#FF5D55"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5"
         tools:ignore="TextContrastCheck" />
@@ -56,7 +39,7 @@
         android:layout_height="150dp"
         android:layout_marginStart="12dp"
         android:layout_marginLeft="12dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="15dp"
         android:contentDescription="@string/toy17"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addNewItemsBtn"
@@ -66,20 +49,20 @@
         android:id="@+id/imageView8"
         android:layout_width="175dp"
         android:layout_height="147dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="15dp"
         android:layout_marginRight="15dp"
         android:contentDescription="@string/toy6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView7"
-        app:layout_constraintTop_toBottomOf="@+id/ItemsBtn"
+        app:layout_constraintTop_toBottomOf="@+id/addNewItemsBtn"
         app:srcCompat="@drawable/toy6" />
 
     <ImageView
         android:id="@+id/imageView9"
         android:layout_width="188dp"
         android:layout_height="155dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:contentDescription="@string/toy16"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/vehiclepagepara"
@@ -89,7 +72,7 @@
         android:id="@+id/vehiclepagepara"
         android:layout_width="382dp"
         android:layout_height="94dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:text="@string/vehiclePagePara"
@@ -105,13 +88,13 @@
         android:layout_height="156dp"
         android:layout_marginStart="6dp"
         android:layout_marginLeft="6dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
+        android:contentDescription="@string/toy20"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView9"
         app:layout_constraintTop_toBottomOf="@+id/vehiclepagepara"
-        app:srcCompat="@drawable/toy20"
-        android:contentDescription="TODO" />
+        app:srcCompat="@drawable/toy20" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

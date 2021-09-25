@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -30,7 +31,37 @@ public class ToysAddForm extends AppCompatActivity {
         final EditText edit_ToyDate = findViewById(R.id.edit_ToyDate);
 
         Button btn = findViewById(R.id.btn_submit);
+        Button btn_open = findViewById(R.id.btn_open);
+        btn_open.setOnClickListener(v->
+        {
+            Intent intent =new Intent(ToysAddForm.this,RVActivity.class);
+            startActivity(intent);
+        });
+
+
         DAOToys dao = new DAOToys();
+
+        Toys toys_edit = (Toys)getIntent().getSerializableExtra("EDIT");
+        if(toys_edit != null)
+        {
+            btn.setText("UPDATE");
+            edit_ToyID.setText(toys_edit.getToyID());
+            edit_ToyName.setText(toys_edit.getToyName());
+            edit_ToyDescription.setText(toys_edit.getToyDescription());
+            btn_open.setVisibility(View.GONE);
+        }
+        else {
+            btn.setText("SUBMIT");
+            btn_open.setVisibility(View.VISIBLE);
+        }
+
+
+
+
+
+
+
+
         btn.setOnClickListener(v->
         {
             //Insert
@@ -43,66 +74,51 @@ public class ToysAddForm extends AppCompatActivity {
                     edit_Price.getText().toString(),
                     edit_ToyDate.getText().toString());
 
-            dao.add(toys).addOnSuccessListener(suc->
+            if (toys_edit == null)
             {
-                Toast.makeText(this, "Record is Inserted!", Toast.LENGTH_SHORT).show();
 
-            }).addOnFailureListener(er->
-            {
-                Toast.makeText(this,""+er.getMessage(),Toast.LENGTH_SHORT).show();
-            });
+                dao.add(toys).addOnSuccessListener(suc ->
+                {
+                    Toast.makeText(this, "Record is Inserted!", Toast.LENGTH_SHORT).show();
 
+                }).addOnFailureListener(er ->
+                {
+                    Toast.makeText(this, "" + er.getMessage(), Toast.LENGTH_SHORT).show();
+                });
+            }
+            else {
 
-
-
-
-
-
-            //Update
-            /*HashMap<String,Object> hashMap = new HashMap<>();
-            hashMap.put("ToyID",edit_ToyID.getText().toString());
-            hashMap.put("ToyName",edit_ToyName.getText().toString());
-            hashMap.put("ToyDescription",edit_ToyDescription.getText().toString());
-            hashMap.put("ToyColour",edit_ToyColour.getText().toString());
-            hashMap.put("ToyBrand",edit_ToyBrand.getText().toString());
-            hashMap.put("ToyModel",edit_ToyModel.getText().toString());
-            hashMap.put("ToyPrice",edit_Price.getText().toString());
-            hashMap.put("ToyDate",edit_ToyDate.getText().toString());
-
-
-            dao.update("-MkInJkgR_rm1aQ2fLiW",hashMap).addOnSuccessListener(suc->
-            {
-                Toast.makeText(this, "Record is Updated!", Toast.LENGTH_SHORT).show();
-            }).addOnFailureListener(er->
-            {
-                Toast.makeText(this,""+er.getMessage(),Toast.LENGTH_SHORT).show();
-            });*/
+                //Update
+                HashMap<String,Object> hashMap = new HashMap<>();
+                hashMap.put("ToyID",edit_ToyID.getText().toString());
+                hashMap.put("ToyName",edit_ToyName.getText().toString());
+                hashMap.put("ToyDescription",edit_ToyDescription.getText().toString());
+                hashMap.put("ToyColour",edit_ToyColour.getText().toString());
+                hashMap.put("ToyBrand",edit_ToyBrand.getText().toString());
+                hashMap.put("ToyModel",edit_ToyModel.getText().toString());
+                hashMap.put("ToyPrice",edit_Price.getText().toString());
+                hashMap.put("ToyDate",edit_ToyDate.getText().toString());
 
 
+                dao.update(toys_edit.getKey(),hashMap).addOnSuccessListener(suc->
+                {
+                    Toast.makeText(this, "Record is Updated!", Toast.LENGTH_SHORT).show();
+                    finish();
+
+                }).addOnFailureListener(er->
+                {
+                    Toast.makeText(this,""+er.getMessage(),Toast.LENGTH_SHORT).show();
+                });
 
 
+            }
 
 
-
-
-            //Delete
-            /*dao.remove("-MkInJkgR_rm1aQ2fLiW").addOnSuccessListener(suc->
-            {
-                Toast.makeText(this, "Record is Removed!", Toast.LENGTH_SHORT).show();
-            }).addOnFailureListener(er->
-            {
-                Toast.makeText(this,""+er.getMessage(),Toast.LENGTH_SHORT).show();
-            });*/
 
         });
 
 
-        Button btn_open = findViewById(R.id.btn_open);
-        btn_open.setOnClickListener(v->
-        {
-            Intent intent = new Intent(ToysAddForm.this, RVActivity.class);
-            startActivity(intent);
-        });
+
 
 
 

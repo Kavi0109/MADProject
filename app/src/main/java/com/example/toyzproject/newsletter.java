@@ -29,8 +29,5 @@ public class newsletter extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
-
     }
 }

@@ -75,6 +75,7 @@ public class RVActivity extends AppCompatActivity
                 for(DataSnapshot data : snapshot.getChildren())
                 {
                    Toys toys = data.getValue(Toys.class);
+                   toys.setKey(data.getKey());
                    toy.add(toys);
                    key = data.getKey();
                 }

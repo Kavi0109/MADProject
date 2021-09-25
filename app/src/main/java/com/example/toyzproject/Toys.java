@@ -1,7 +1,14 @@
 package com.example.toyzproject;
 
-public class Toys
+import com.google.firebase.database.Exclude;
+
+import java.io.Serializable;
+
+public class Toys implements Serializable
 {
+
+    @Exclude
+    private String key;
     private String ToyID;
     private String ToyName;
     private String ToyDescription;
@@ -26,58 +33,72 @@ public class Toys
     }
 
     public String getToyID() {
+
         return ToyID;
     }
 
     public void setToyID(String toyID) {
+
         ToyID = toyID;
     }
 
     public String getToyName() {
+
         return ToyName;
     }
 
     public void setToyName(String toyName) {
+
         ToyName = toyName;
     }
 
     public String getToyDescription() {
+
         return ToyDescription;
     }
 
     public void setToyDescription(String toyDescription) {
+
         ToyDescription = toyDescription;
     }
 
     public String getToyColor() {
+
         return ToyColor;
     }
 
     public void setToyColor(String toyColor) {
+
         ToyColor = toyColor;
     }
 
     public String getToyBrand() {
+
         return ToyBrand;
     }
 
     public void setToyBrand(String toyBrand) {
+
         ToyBrand = toyBrand;
     }
 
     public String getToyModel() {
+
         return ToyModel;
     }
 
     public void setToyModel(String toyModel) {
+
         ToyModel = toyModel;
     }
 
     public String getToyPrice() {
+
         return ToyPrice;
     }
 
     public void setToyPrice(String toyPrice) {
+
         ToyPrice = toyPrice;
     }
 
@@ -86,6 +107,21 @@ public class Toys
     }
 
     public void setToyDate(String toyDate) {
+
         ToyDate = toyDate;
     }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
+
+
+
+
+
+
 }

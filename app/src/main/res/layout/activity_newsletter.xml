@@ -9,14 +9,16 @@
 
     <ImageView
         android:id="@+id/newsletterimage"
-        android:layout_width="0dp"
-        android:layout_height="296dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="372dp"
+        android:layout_height="288dp"
+        android:layout_marginTop="16dp"
         android:contentDescription="@string/newsletterimage"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/newsletter" />
+        app:srcCompat="@drawable/newsletter1"
+        tools:ignore="ImageContrastCheck" />
 
     <Button
         android:id="@+id/emailBtn"
@@ -44,44 +46,47 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailBtn" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="167dp"
-        android:layout_height="121dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
-        android:contentDescription="@string/lion"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/new1"
-        app:layout_constraintTop_toBottomOf="@+id/emailBtn"
-        app:srcCompat="@drawable/toy2" />
-
     <TextView
         android:id="@+id/news2"
         android:layout_width="173dp"
         android:layout_height="98dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginRight="25dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
         android:text="@string/news2"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="157dp"
-        android:layout_height="121dp"
-        android:layout_marginStart="29dp"
-        android:layout_marginLeft="29dp"
-        android:layout_marginTop="22dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_width="148dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/new1"
+        app:layout_constraintTop_toBottomOf="@+id/emailBtn"
+        app:srcCompat="@drawable/newsletter3"
+        android:contentDescription="@string/newsletter3" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="149dp"
+        android:layout_height="137dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
         app:layout_constraintEnd_toStartOf="@+id/news2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/new1"
-        app:srcCompat="@drawable/toy1"
-        android:contentDescription="TODO" />
+        app:srcCompat="@drawable/newsletter2"
+        tools:ignore="ImageContrastCheck"
+        android:contentDescription="@string/newsletter2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
