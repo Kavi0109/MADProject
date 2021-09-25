@@ -11,8 +11,5 @@
         android:id="@+id/menu_calculate"
         android:title="Calculate"/>
 
-    <item
-        android:id="@+id/menu_cancel"
-        android:title="Cancel"/>
 
 </menu>

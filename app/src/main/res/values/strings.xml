@@ -27,7 +27,7 @@
     <string name="donationInfo">Description:  we will be needing 60 dolls for children age around 2-4. They can be used or new but we would want it to be clean and healthy the donation period will be from 1-10-2020 to 2-12-2020 .</string>
     <string name="btn_edit">Edit</string>
     <string name="btn_delete">Delete</string>
-    <string name="donation_request">Donation Request</string>
+    <string name="donation_request">Donation Requests</string>
     <string name="donate1">Donate Toys</string>
     <string name="donate2">Apply for Toys</string>
     <string name="home">Donations</string>
@@ -46,7 +46,7 @@
     <string name="Org_donating">Organization</string>
     <string name="Org_select">Select</string>
     <string name="about_pg">About Donation</string>
-    <string name="about_don">HowDonate ?</string>
+    <string name="about_don">How to Donate ?</string>
     <string name="para2">To help us prevent infection and maintain children safety and well-being the Toys should be sturdy and free of any parts that may pinch or break off. All Toys must be non-toxic and also the toys should be wrapped properly before donating If the items don’t fall within our guidelines or are unsafe/inappropriate for children, organizations reserve the right to politely decline donations.</string>
     <string name="direct_donation">Donate your Toys directly</string>
     <string name="purchase_donation">Donate toys by purchasing</string>
@@ -61,12 +61,12 @@
     <string name="permission">Pending</string>
     <string name="type_input">Soft Toys</string>
     <string name="about_toy">This is a pack of 3 Teddy bears which are very soft in material and never used. There will be no harm to children when using this toy</string>
-    <string name="feedback">Help Center</string>
+    <string name="feedback">Feedback</string>
     <string name="feedback_type">Enter Type</string>
     <string name="suggestion">Your Suggestion</string>
     <string name="email">Email</string>
     <string name="btn_send">Send Message</string>
-    <string name="note2">We may reply your E-mail directly, we will sincerely take your precious suggestions and comments</string>
+    <string name="note2">We may not reply to your E-mail directly, we will sincerely take your precious suggestions and comments</string>
     <string name="calculation_pg">Donation Calculation</string>
     <string name="require">Quantity Required :</string>
     <string name="receive">Quantity Received :</string>

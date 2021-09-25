@@ -98,12 +98,6 @@ public class RVAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
 
                        break;
 
-                   case R.id.menu_cancel:
-                       Intent intent3 = new Intent(context, Home.class);
-                       context.startActivity(intent3);
-
-                       break;
-
                }
 
                return false;

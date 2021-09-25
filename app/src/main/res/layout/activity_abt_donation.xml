@@ -13,6 +13,7 @@
         android:layout_marginStart="60dp"
         android:layout_marginLeft="60dp"
         android:layout_marginTop="16dp"
+        android:onClick="Help"
         android:text="DONATE TOYS BY PURCHASING"
         app:backgroundTint="@color/Perisimone"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,8 +77,9 @@
         android:layout_marginTop="8dp"
         android:fontFamily="baskerville"
         android:text="@string/about_don"
-        android:textColor="@color/black"
+        android:textColor="@color/Perisimone"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar4" />
 
