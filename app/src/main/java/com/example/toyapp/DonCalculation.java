@@ -53,7 +53,7 @@ public class DonCalculation extends AppCompatActivity {
 
             temp3 = cal.calculatepercentageDonation(temp,temp2);
 
-            //Toast.makeText(this,"select a radio button", Toast.LENGTH_SHORT).show();
+
             tv_ans.setText(new Float(temp3).toString()+"%");
         }
 

@@ -32,6 +32,9 @@ public class Home extends AppCompatActivity {
             Intent apply = new Intent(this, MainActivity.class);
             startActivity(apply);
 
+        }else if (button_text.equals("FEEDBACK")) {
+            Intent fed = new Intent(this, HelpCenter.class);
+            startActivity(fed);
         }
     }
 }

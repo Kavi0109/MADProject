@@ -30,7 +30,7 @@ public class HelpCenter extends AppCompatActivity {
         Button send = findViewById(R.id.btn_send);
         ImageView navabt = findViewById(R.id.fbarrow);
         navabt.setOnClickListener(v->{
-            Intent intent =new Intent(this, AbtDonation.class);
+            Intent intent =new Intent(this, Home.class);
             startActivity(intent);
         });
         DAOFeedback dfb = new DAOFeedback();

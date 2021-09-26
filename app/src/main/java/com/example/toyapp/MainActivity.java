@@ -79,7 +79,8 @@ public class MainActivity extends AppCompatActivity {
         btnSubmit.setOnClickListener(v->{
 
             if (TextUtils.isEmpty(txtName.getText().toString().trim()))
-                Toast.makeText(this, "Please enter Name", Toast.LENGTH_SHORT).show();
+                txtName.setError("Please enter Name");
+                //Toast.makeText(this, "Please enter Name", Toast.LENGTH_SHORT).show();
             else if (TextUtils.isEmpty(txtAddress.getText().toString().trim()))
                 Toast.makeText(this, "Please enter an Address", Toast.LENGTH_SHORT).show();
             else if (TextUtils.isEmpty(txtEmail.getText().toString().trim()))
@@ -98,11 +99,11 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "Please Accept privacy policy", Toast.LENGTH_SHORT).show();
             else if (!txtEmail.getText().toString().trim().matches(emailpattern))
                 txtEmail.setError("Enter valid email");
-            else if (txtAddress.getText().toString().trim().length()>12)
-                txtAddress.setError("address must be max 11 characters");
+            else if (txtAddress.getText().toString().trim().length()>20)
+                txtAddress.setError("address must be max 20 characters");
             else {
-                Organization org = new Organization(txtName.getText().toString(), txtAddress.getText().toString(), txtEmail.getText().toString(), txtDonType.getText().toString(), txtDonGender.getText().toString(), txtDonQuantity.getText().toString(), txtAge.getText().toString(), txtPeriod.getText().toString());
 
+                Organization org = new Organization(txtName.getText().toString(), txtAddress.getText().toString(), txtEmail.getText().toString(), txtDonType.getText().toString(), txtDonGender.getText().toString(), txtDonQuantity.getText().toString(), txtAge.getText().toString(), txtPeriod.getText().toString());
                 if (org_edit == null) {
                     dao.add(org).addOnSuccessListener(suc -> {
 
@@ -127,7 +128,6 @@ public class MainActivity extends AppCompatActivity {
                     hashMap.put("orgName", txtName.getText().toString());
                     hashMap.put("orgAddress", txtAddress.getText().toString());
                     hashMap.put("orgEmail", txtEmail.getText().toString());
-                    //              hashMap.put("orgPhone",txtPhone.getText().toString());
                     hashMap.put("donationType", txtDonType.getText().toString());
                     hashMap.put("donationGender", txtDonGender.getText().toString());
                     hashMap.put("quantity", txtDonQuantity.getText().toString());

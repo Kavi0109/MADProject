@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 public class sendEmail extends AppCompatActivity {
 
@@ -22,6 +23,12 @@ public class sendEmail extends AppCompatActivity {
         etSubject=findViewById(R.id.et_subject);
         etMessage=findViewById(R.id.et_message);
         btnSend=findViewById(R.id.btnsend);
+
+        ImageView navabt = findViewById(R.id.hlarrow);
+        navabt.setOnClickListener(v->{
+            Intent intent =new Intent(this, AbtDonation.class);
+            startActivity(intent);
+        });
 
         btnSend.setOnClickListener(new View.OnClickListener() {
             @Override

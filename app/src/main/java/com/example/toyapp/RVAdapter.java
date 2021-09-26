@@ -85,7 +85,6 @@ public class RVAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
                            context.startActivity(intent2);
                            notifyItemRemoved(position);
 
-                          // list.remove(org);
                        }).addOnFailureListener(er->
                        {
                            Toast.makeText(context, ""+er.getMessage(), Toast.LENGTH_SHORT).show();

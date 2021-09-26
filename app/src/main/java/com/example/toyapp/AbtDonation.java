@@ -31,13 +31,10 @@ public class AbtDonation extends AppCompatActivity {
             Intent ntoy = new Intent(this, MainActivity2.class);
             startActivity(ntoy);
         }
-        else if (button_text.equals("MAKE AN INQUIRY/FEEDBACK")) {
-            Intent donate = new Intent(this, HelpCenter.class);
-            startActivity(donate);
+        else if (button_text.equals("MAKE AN INQUIRY")) {
+            Intent send2 = new Intent(this, sendEmail.class);
+            startActivity(send2);
         }
-        else if (button_text.equals("DONATE TOYS BY PURCHASING")) {
-            Intent donate2 = new Intent(this, sendEmail.class);
-            startActivity(donate2);
-        }
+
     }
 }
