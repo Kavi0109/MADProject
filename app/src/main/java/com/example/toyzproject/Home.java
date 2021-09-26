@@ -52,6 +52,15 @@ public class Home extends AppCompatActivity {
             }
         });
 
+        //statistics
+        button = (Button) findViewById(R.id.StaticsBtn);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home.this,Statistics.class);
+                startActivity(intent);
+            }
+        });
 
 
 

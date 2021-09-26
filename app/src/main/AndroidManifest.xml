@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ToyzProject">
         <activity
+            android:name=".Statistics"
+            android:exported="true" />
+        <activity
             android:name=".RVActivity"
             android:exported="true" />
         <activity

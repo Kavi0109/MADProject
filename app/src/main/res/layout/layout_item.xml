@@ -35,28 +35,28 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/txt_toyid"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/text"
-                android:textSize="20sp"
                 android:layout_marginBottom="5dp"
-                android:id="@+id/txt_toyid"/>
+                android:text="text"
+                android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/txt_toyname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/text"
-                android:textSize="20sp"
                 android:layout_marginBottom="5dp"
-                android:id="@+id/txt_toyname"/>
+                android:text="text"
+                android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/txt_toyDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/text"
-                android:textSize="20sp"
                 android:layout_marginBottom="5dp"
-                android:id="@+id/txt_toyDescription"/>
+                android:text="text"
+                android:textSize="20sp" />
 
 
         </LinearLayout>
