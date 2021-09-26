@@ -58,7 +58,7 @@ public class RVAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 {
                     case R.id.menu_edit:
                         Intent intent = new Intent(context,EnterProfile.class);
-                        intent.putExtra("EDIT", (Serializable) user);
+                        intent.putExtra("EDIT",user);
                         context.startActivity(intent);
                         break;
                     case R.id.menu_remove:

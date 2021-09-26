@@ -17,7 +17,7 @@
         android:layout_gravity="center_horizontal"
         android:backgroundTint="@color/btn"
         android:paddingRight="10dp"
-        android:text="Take A photo"
+        android:text="Upload Image"
         android:layout_marginBottom="90dp"
         android:textColor="@color/black"
         app:backgroundTint="@color/btn"

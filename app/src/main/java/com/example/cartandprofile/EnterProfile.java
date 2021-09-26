@@ -47,7 +47,7 @@ public class EnterProfile extends AppCompatActivity {
         Button btn_image = findViewById(R.id.button4);
 
         btn_image.setOnClickListener(v -> {
-            Intent intent = new Intent(EnterProfile.this,UploadImage.class);
+            Intent intent = new Intent(EnterProfile.this,CreateProfile.class);
             startActivity(intent);
         });
 
@@ -103,6 +103,8 @@ public class EnterProfile extends AppCompatActivity {
                 HashMap<String,Object> hashMap = new HashMap<>();
                 hashMap.put("name",edit_name.getText().toString());
                 hashMap.put("age",edit_age.getText().toString());
+                hashMap.put("bio",edit_bio.getText().toString());
+                hashMap.put("school",edit_school.getText().toString());
                 dao.update(user_edit.getKey(),hashMap).addOnSuccessListener(suc ->
                 {
                     Toast.makeText(this,"Record Is Updated!",Toast.LENGTH_SHORT).show();

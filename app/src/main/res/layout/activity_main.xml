@@ -20,6 +20,7 @@
         android:layout_height="wrap_content"
         android:paddingLeft="10dp"
         android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
         android:text="@string/contentsp"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -52,6 +53,19 @@
         tools:ignore="TextContrastCheck" />
 
     <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_margin="20sp"
+        android:layout_marginBottom="0dp"
+        android:text="@string/subs"
+        android:textAlignment="viewStart"
+        android:textColor="@color/border"
+        app:backgroundTint="@color/white"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -68,18 +82,7 @@
 
 
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="start"
-        android:layout_margin="20sp"
-        android:layout_marginBottom="0dp"
-        android:text="@string/subs"
-        android:textAlignment="viewStart"
-        android:textColor="@color/black"
-        app:backgroundTint="@color/white"
-        tools:ignore="TextContrastCheck" />
+
 
     <Button
         android:layout_width="match_parent"

@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     Button button1;
     Button button2;
     Button button5;
+    Button button3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         button1 = (Button) findViewById(R.id.button);
         button2 = (Button) findViewById(R.id.button2);
         button5 = (Button) findViewById(R.id.button5);
+        button3 = (Button) findViewById(R.id.button3);
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,7 +46,18 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(),EnterProfile.class));
             }
         });
+
+        button3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public  void onClick(View v){
+                startActivity(new Intent(getApplicationContext(),SendEmail.class));
+            }
+
+        });
+
         }
+
+
 
     public void openNewAtivity() {
         Intent intent = new Intent(this,CreateProfile.class);
