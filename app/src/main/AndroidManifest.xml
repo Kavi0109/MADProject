@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CartAndProfile">
         <activity
+            android:name=".OrderConfirm"
+            android:exported="true" />
+        <activity
             android:name=".SendEmail"
             android:exported="true" />
         <activity

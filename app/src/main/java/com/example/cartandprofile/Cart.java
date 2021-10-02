@@ -20,7 +20,7 @@ import java.util.HashMap;
 public class Cart extends AppCompatActivity {
 
     private TextView show_cart;
-    private Button button1,button2;
+    private Button button1,button2,button7;
     private DatabaseReference reference;
 
     @Override
@@ -32,6 +32,7 @@ public class Cart extends AppCompatActivity {
         show_cart = findViewById(R.id.show_cart);
         button1 = findViewById(R.id.btton1);
         button2 = findViewById(R.id.btton2);
+        button7 = findViewById(R.id.button7);
 
 
         button1.setOnClickListener(new View.OnClickListener() {
@@ -55,6 +56,13 @@ public class Cart extends AppCompatActivity {
                 parameters.put("Price", "USD150");
                 reference.child(ID_cart).setValue(parameters);
 
+            }
+        });
+
+        button7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), OrderConfirm.class));
             }
         });
 

@@ -10,24 +10,23 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-
     <TextView
-        android:id="@+id/product_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
         android:text="@string/product_name"
+        android:layout_marginTop="6dp"
+        android:textSize="22sp"
         android:textColor="@color/black"
-        android:textSize="22sp" />
+        android:id="@+id/product_name"/>
 
     <TextView
-        android:id="@+id/price"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
         android:text="@string/price"
+        android:layout_marginTop="6dp"
+        android:textSize="20sp"
         android:textColor="@color/black"
-        android:textSize="20sp" />
+        android:id="@+id/price"/>
 
 
 </LinearLayout>

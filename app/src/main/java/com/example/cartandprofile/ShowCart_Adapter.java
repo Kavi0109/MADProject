@@ -36,8 +36,7 @@ public class ShowCart_Adapter extends RecyclerView.Adapter<ShowCart_Adapter.View
     }
 
     @Override
-    public int getItemCount()
-    {
+    public int getItemCount() {
         return showCart_modelList.size();
     }
 
@@ -53,3 +52,4 @@ public class ShowCart_Adapter extends RecyclerView.Adapter<ShowCart_Adapter.View
         }
     }
 }
+
