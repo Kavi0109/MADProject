@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.TableLayout;
 
 import com.google.android.material.tabs.TabLayout;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class Home extends AppCompatActivity {
     public Button button;
@@ -27,7 +28,14 @@ public class Home extends AppCompatActivity {
 
 
         //NewArrivals Btn
-
+        button = (Button) findViewById(R.id.NewArrivalsBtn);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home.this,NewArrivals.class);
+                startActivity(intent);
+            }
+        });
 
 
 
@@ -52,7 +60,7 @@ public class Home extends AppCompatActivity {
             }
         });
 
-        //statistics
+        //statistics Btn
         button = (Button) findViewById(R.id.StaticsBtn);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,8 +70,13 @@ public class Home extends AppCompatActivity {
             }
         });
 
-
-
-
     }
+
+    //Logout Btn
+    public void logout(View view){
+        FirebaseAuth.getInstance().signOut();//logout the user that is currently logged in
+        startActivity(new Intent(getApplicationContext(),Login.class));
+        finish();
+    }
+
 }

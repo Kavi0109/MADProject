@@ -81,7 +81,22 @@
             app:backgroundTint="#FF5D55"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/NewsletterBtn" />
+            app:layout_constraintTop_toBottomOf="@+id/NewsletterBtn"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <Button
+            android:id="@+id/LogOutBtn"
+            android:layout_width="256dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/homebtn_bg"
+            android:text="@string/LogOutBtn"
+            android:textSize="20sp"
+            app:backgroundTint="#FF5D55"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/StaticsBtn"
+            android:onClick="logout"/>
 
         <TextView
             android:id="@+id/HomePara1"
@@ -106,7 +121,7 @@
             android:id="@+id/HomePara2"
             android:layout_width="396dp"
             android:layout_height="80dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="30dp"
             android:paddingStart="30dp"
             android:paddingLeft="30dp"
             android:paddingTop="10dp"
@@ -116,9 +131,8 @@
             android:textColor="@color/black"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.533"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/StaticsBtn" />
+            app:layout_constraintTop_toBottomOf="@+id/LogOutBtn" />
 
         <ImageView
             android:id="@+id/ToyVehicleimage1"
@@ -127,7 +141,7 @@
 
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="60dp"
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginBottom="100dp"

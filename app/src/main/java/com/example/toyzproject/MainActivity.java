@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -70,12 +71,45 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String email = BusinessEmail.getText().toString().trim();
                 String password = BusinessPassword.getText().toString().trim();
+                String conpassword = BusinessConfirmPassword.getText().toString().trim();
                 String bName = BusinessName.getText().toString();
                 String bcontactNo = BusinessContactNo.getText().toString();
                 String bUsername = BusinessUsername.getText().toString();
 
+                if(TextUtils.isEmpty(bName)){
+                    BusinessName.setError("Business Name is Required.");
+                    return;
+                }
+
+                if(TextUtils.isEmpty(bcontactNo)){
+                    BusinessContactNo.setError("Business Name is Required.");
+                    return;
+                }
+
+                if (bcontactNo.length() < 10) {
+                    BusinessContactNo.setError("Contact number too short. Enter 10 digits");
+                    return;
+                }
+
+                if(bcontactNo.length() > 10){
+                    BusinessContactNo.setError("Contact number too long. Enter 10 digits");
+                    return;
+                }
+
+                if(TextUtils.isEmpty(bUsername)){
+                    BusinessUsername.setError("Username is Required.");
+                    return;
+                }
+
+
+
                 if(TextUtils.isEmpty(email)){
                     BusinessEmail.setError("Email is Required.");
+                    return;
+                }
+
+                if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+                    BusinessEmail.setError("Invalid Email address.");
                     return;
                 }
 
@@ -85,9 +119,22 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if (password.length() < 6) {
-                    BusinessPassword.setError("Password must be less than 6 characters");
+                    BusinessPassword.setError("Password too short. Enter 6 characters");
                     return;
                 }
+
+                if (password.length() > 6) {
+                    BusinessPassword.setError("Password is too long. Enter 6 characters");
+                    return;
+                }
+
+
+
+
+
+
+
+
 
                 //set the visibility of the progress bar
                 progressBar.setVisibility(view.VISIBLE);

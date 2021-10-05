@@ -21,11 +21,13 @@ public class RVAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
     ArrayList<Toys> list = new ArrayList<>();
     public RVAdapter(Context ctx)
     {
+
         this.context = ctx;
     }
 
     public void setItems(ArrayList<Toys> toys)
     {
+
         list.addAll(toys);
     }
 
@@ -49,6 +51,11 @@ public class RVAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         vh.txt_toyid.setText(toys.getToyID());
         vh.txt_toyname.setText(toys.getToyName());
         vh.txt_toyDescription.setText(toys.getToyDescription());
+        vh.txt_toycolour.setText(toys.getToyColor());
+        vh.txt_toyBrand.setText(toys.getToyBrand());
+        vh.txt_toyModel.setText(toys.getToyModel());
+        vh.txt_toyPrice.setText(toys.getToyPrice());
+        vh.txt_toyDate.setText(toys.getToyDate());
 
         vh.txt_option.setOnClickListener(v->
         {

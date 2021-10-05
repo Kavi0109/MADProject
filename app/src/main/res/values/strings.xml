@@ -84,6 +84,12 @@
     <string name="open">Open</string>
     <string name="_8942">⋮</string>
     <string name="tz">tz</string>
+    <string name="ProfitMargin">Profit Margin</string>
+    <string name="Quantity">Quantity</string>
+    <string name="CalculateBtn">Calculate</string>
+    <string name="newarrivals1">newarrivals1</string>
+    <string name="InsertFormdetails">Details</string>
+    <string name="LogOutBtn">Log Out</string>
 
 
 </resources>

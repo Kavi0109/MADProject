@@ -58,6 +58,46 @@
                 android:text="text"
                 android:textSize="20sp" />
 
+            <TextView
+                android:id="@+id/txt_toycolour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="text"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_toyBrand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="text"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_toyModel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="text"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_toyPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="text"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_toyDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="text"
+                android:textSize="20sp" />
+
 
         </LinearLayout>
 

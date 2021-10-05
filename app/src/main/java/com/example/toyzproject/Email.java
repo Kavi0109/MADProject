@@ -31,6 +31,7 @@ public class Email extends AppCompatActivity {
         btSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                openDialog();
                 Intent intent = new Intent(Intent.ACTION_VIEW,
                         Uri.parse("mailto:" + etTo.getText().toString()));
                 intent.putExtra(Intent.EXTRA_SUBJECT,etSuject.getText().toString());
@@ -46,5 +47,10 @@ public class Email extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    public void openDialog() {
+        PopUpDialog popUpDialog = new PopUpDialog();
+        popUpDialog.show(getSupportFragmentManager(),"popup dialog");
     }
 }
